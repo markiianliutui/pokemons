@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: linear-gradient(to right,  #00ff6c, #00aaff);
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerLogo {
+  color: rebeccapurple;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
