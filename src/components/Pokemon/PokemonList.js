@@ -5,6 +5,8 @@ import Modal from './Modal'
 import { Link } from 'react-router-dom'
 
 function PokemonList() {
+  const apiUrl =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
   const [pokemonList, setPokemonList] = useState([])
   const [isModal, setIsModal] = useState(false)
   const [selectedPokemon, setSelectedPokemon] = useState([])
@@ -22,19 +24,14 @@ function PokemonList() {
 
   return (
     <div>
-
       <div className={styles.wrapper}>
         {pokemonList.map((pokemon, index) => (
           <div className={styles.container} key={index}>
-            <img
-              alt="logo"
-              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-                index + 1
-              }.png`}
-            />
+            <img alt="logo" src={`${apiUrl}${index + 1}.png`} />
             <h1>{pokemon.name.toUpperCase()}</h1>
             <div className={styles.detailsTab}>
-              <AiFillHeart className={styles.heart}
+              <AiFillHeart
+                className={styles.heart}
                 onClick={() => {
                   addPokemonNameToModal(pokemon)
                 }}
@@ -44,9 +41,7 @@ function PokemonList() {
                 state={{
                   index,
                   pokemon,
-                  imageUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-                    index + 1
-                  }.png`,
+                  imageUrl: `${apiUrl}${index + 1}.png`,
                 }}
               >
                 <p className={styles.detailsLink}>Details</p>

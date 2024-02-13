@@ -1,4 +1,3 @@
-
 import './App.css'
 import Header from './components/Pokemon/Header'
 import PokemonFavorite from './components/Pokemon/PokemonFavorite'
