@@ -12,6 +12,7 @@ a {
 }
 
 .headerLogo {
-  color: rebeccapurple;
+  color: rgb(153, 51, 51);
+  background-color: red;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
