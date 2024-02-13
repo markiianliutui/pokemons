@@ -3,7 +3,7 @@ a {
 }
 
 .header {
-  background: linear-gradient(to right,  #00ff6c, #00aaff);
+  background: linear-gradient(to right, #00ff6c, #00aaff);
   height: 75px;
   width: 100%;
   display: flex;
@@ -12,7 +12,6 @@ a {
 }
 
 .headerLogo {
-  color: rgb(153, 51, 51);
-  background-color: red;
+  color: rebeccapurple;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
